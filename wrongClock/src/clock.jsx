@@ -1,13 +1,17 @@
 export default function Clock() {
 
+    let AMorPM = "AM"
     const time = new Date();
     const displayTime = time.getHours() + ":" + time.getMinutes();
     //creates our time that we can now mess with
 
+    if (time.getHours() >= 13) {
+        AMorPM = "PM"
+    }
 
     return(
         <div>
-            <p>{displayTime}</p>
+            <p>{displayTime} {AMorPM}</p>
         </div>
     )
 }
