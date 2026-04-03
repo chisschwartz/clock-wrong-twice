@@ -6,7 +6,7 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 198px/145% var(--sans);
+  font: 220px/145% var(--sans);
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -15,6 +15,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* find new font for clock */
 
 @media (prefers-color-scheme: dark) {
   :root {
